@@ -1,17 +1,22 @@
 {
   "name": "ts-classes",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "rollup -c -w",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "serve": "nodemon server.js",
+    "serve:prod": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "axios": "^1.8.4",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.1",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
@@ -20,15 +25,16 @@
     "@babel/plugin-proposal-decorators": "^7.25.9",
     "@babel/preset-typescript": "^7.26.0",
     "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@rollup/plugin-typescript": "^11.1.0",
     "@types/reflect-metadata": "^0.1.0",
+    "nodemon": "^3.1.0",
     "rollup": "^3.20.0",
     "rollup-plugin-cleanup": "^3.2.1",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-serve": "^2.0.0",
     "tslib": "^2.5.0",
     "typescript": "^5.0.0"
-  },
-  "packageManager": "yarn@4.7.0+sha512.5a0afa1d4c1d844b3447ee3319633797bcd6385d9a44be07993ae52ff4facabccafb4af5dcd1c2f9a94ac113e5e9ff56f6130431905884414229e284e37bb7c9"
+  }
 }
